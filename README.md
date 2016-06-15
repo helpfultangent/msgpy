@@ -5,9 +5,13 @@ Version: **v.0.1.4** |
 Last Updated: **2016.06.14**
 
 ### What is msg.py?
-Msg.py is a python script to regenerate specific selected scalar inputs for MODFLOW 96 scenarios.
+Msg.py is a python script to regenerate scalar inputs for pumping files used to run MODFLOW 96 scenarios for the Barton Springs Edwards Aquifer case study and groundwater model.
 
-The script takes the targeted GAM's baseline wells.dat file and an exported tablelink data file from the targeted GAM's shapefile and combines them with a set of pre-determined scalar input values for the Model to generate a new set of candidate solution input wel.dat files for use in MODFLOW 96.
+The script takes the targeted groundwater availability model's (GAM) baseline wells.dat file and an exported tablelink data file from the targeted shapefile or model grid for the case study area and combines them with a set of pre-determined scalar input values for the Model to generate a new set of candidate solution input wel.dat files for use in MODFLOW 96.
+
+Note that the 'pre-determined' scalar input values were generated using a simulation-optimization approach. For more information,  descriptions, and links to other resources and references see 
+Pierce, Suzanne A (2015): Gridded Shapefile for the Recharge Zones of the Barton Springs segment of the Edwards Aquifer. figshare.
+https://dx.doi.org/10.6084/m9.figshare.1330145.v3, Retrieved: 14 04, Jun 15, 2016 (GMT)
 
 ### Directory Structure
 The msg.py script expects the following directory structure to exist:
